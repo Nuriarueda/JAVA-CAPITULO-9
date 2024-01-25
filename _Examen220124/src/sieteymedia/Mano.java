@@ -14,19 +14,14 @@ public class Mano implements ManoInterface{
 
     @Override
     public void anadeCarta(Carta carta) {
-        if (nCartas < cartas) {
-            cartas[nCartas] = carta;
-            nCartas++;
-        } else {
-            System.out.println("No se pueden aniadir mas cartas");
-        }
+       cartas.add(carta);
     }
 
     @Override
     public Carta[] getCartas() {
         Carta[] cartas2 = new Carta[nCartas];
         for (int i=0; i<nCartas; i++) {
-            cartas2[i] = cartas[i];
+            cartas2[i] = cartas.get(i);
         }
         return cartas2;
     }
@@ -35,7 +30,7 @@ public class Mano implements ManoInterface{
     public String toString() {
         String result = "";
         for (int i = 0; i < nCartas; i++) {
-            result += cartas[i].toString() + "\n";
+            result += cartas.get(i).toString() + "\n";
         }
         return result;
     }
