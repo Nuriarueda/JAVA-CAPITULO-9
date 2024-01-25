@@ -1,18 +1,20 @@
 package sieteymedia;
 
+import java.util.ArrayList;
+
 public class Mano implements ManoInterface{
 
-    private Carta[] cartas;
+    private ArrayList<Carta> cartas;
     private int nCartas;
 
     public Mano() {
-        this.cartas = new Carta[10];
+        this.cartas = new ArrayList<Carta>();
         this.nCartas = 0;
     }
 
     @Override
     public void anadeCarta(Carta carta) {
-        if (nCartas < cartas.length) {
+        if (nCartas < cartas) {
             cartas[nCartas] = carta;
             nCartas++;
         } else {
