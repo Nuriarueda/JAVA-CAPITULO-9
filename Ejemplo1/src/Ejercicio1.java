@@ -1,3 +1,5 @@
+/* A continuación se muestra un ejemplo en el que se puede ver cómo se declara un
+ArrayList y cómo se insertan y se extraen elementos. */
 import java.util.ArrayList;
 public class Ejercicio1 {
     public static void main(String[] args) {
