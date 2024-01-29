@@ -14,7 +14,7 @@ public class Ejemplo3 {
         System.out.println(a);
 
         a.set(2, "turquesa");
-        
+
         System.out.println("Contenido del vector después de machacar la posición 2: ");
         System.out.println(a);
     }
